@@ -26,7 +26,7 @@
   <!-- @submit.prevent -->
 <div id="app" class="flex-auto h-scrren w-screen">
   <div class="py-10   bg-gray-300 h-auto w-screen">
-    <form @submit="checkForm"  action="submit.html" method="post">
+    <form @submit="checkForm"  action="submit.html" >
       <div class=" container w-3/5 p-8  mx-auto mt-10 border-4 border-blue-900 bg-white rounded-lg">
         <!-- content -->
         <div class="m-0">
@@ -46,7 +46,8 @@
                     <div class="grid grid-cols-1 m-0">
                       <div class="flex flex-col ">
                           <label for="firstname" class="text-sm leading-7 text-gray-600">First Name</label>
-                          <input type="text" id="firstname" v-model="firstname" name="firstname" class="bg-gray-100 rounded px-4 py-2 mb-4 border-4 border-blue-800">
+                          <input type="text"   id="firstname" v-model="firstname" name="firstname" class="bg-gray-100 rounded px-4 py-2 mb-4 border-4 border-blue-800">
+                          <!-- <p>{{firstname}}@keyup.enter="addText"</p> -->
                       </div>
                       <div class="flex flex-col">
                           <label for="lastname" class="text-sm leading-7 text-gray-600">Last Name</label>

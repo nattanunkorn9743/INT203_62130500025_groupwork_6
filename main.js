@@ -56,23 +56,25 @@ const app = Vue.createApp({
             errors: null,
             defultName: "nattanunkorn9743",
 
-            input:{
-               fname:'',
-               lname:'',
-               age:'',
-               gender:'',
-               email:'',
-               phone:'',
-               BMI:'',
+            // input:{
+            //    fname:"something",
+            //    lname:'',
+            //    age:'',
+            //    gender:'',
+            //    email:'',
+            //    phone:'',
+            //    BMI:'',
 
 
-            }
+            // }
+            fname2:[]
 
 
         }
     },
     methods: {
         checkForm(e){
+            this.fname2 = [];
             this.errors = validate({firstname: this.firstname,
                                     lastname: this.lastname,
                                     age: this.age,
@@ -86,11 +88,20 @@ const app = Vue.createApp({
             if(this.errors){
                 e.preventDefault();
             }if(!this.errors){
+                
+                this.fname2.push("test pushing")
                 alert("Your proflie is update successfully.")
+               
+                
+                
                 
             }
            
-        }
+        },
+        // addText(){
+        
+        // }
+        
        
     }
 })
