@@ -87,9 +87,9 @@ const app = Vue.createApp({
                                     constraints)
             if(this.errors){
                 e.preventDefault();
-            }if(!this.errors){
+            }else{
                 
-                this.fname2.push("test pushing")
+                // this.fname2.push("test pushing")
                 alert("Your proflie is update successfully.")
                
                 
