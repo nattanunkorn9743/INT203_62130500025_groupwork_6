@@ -74,7 +74,7 @@ const app = Vue.createApp({
     },
     methods: {
         checkForm(e){
-            this.fname2 = [];
+            
             this.errors = validate({firstname: this.firstname,
                                     lastname: this.lastname,
                                     age: this.age,
@@ -85,31 +85,21 @@ const app = Vue.createApp({
                                     // chosensubject: this.chosensubject
                                 },
                                     constraints)
+            
             if(this.errors){
                 e.preventDefault();
             }else{
-                
-                // this.fname2.push("test pushing")
                 alert("Your proflie is update successfully.")
-               
-                
-                
-                
             }
            
         },
-        // addText(){
-        
-        // }
+       
         
        
     }
 })
 
-window.addEventListener('load', (event) => {
-    
-    console.log('page is fully loaded');
-  });
+
 
 app.mount('#app')
 

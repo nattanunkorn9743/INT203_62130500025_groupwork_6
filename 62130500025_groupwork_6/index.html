@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basic Vue Js - HelloWorld App</title>
   
-  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+ <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
   <!-- Using via Google Web Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
@@ -85,7 +85,7 @@
                               {{subject.subject_name}}
                           </option> -->
                           <div >
-                            <input type="submit" value="Submit" class="px-8 w-32 object-center py-2 text-white bg-green-500 rounded-lg hover:bg-green-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+                            <input type="submit" @click="checkForm(e)" value="Submit" class="px-8 w-32 object-center py-2 text-white bg-green-500 rounded-lg hover:bg-green-600 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
                         </div>
                       </div>
                       
